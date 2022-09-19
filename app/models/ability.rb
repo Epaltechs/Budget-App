@@ -1,7 +1,9 @@
 class Ability
   include CanCan::Ability
 
-  # def initialize(user)
+  def initialize(user)
+    can :read, :all if user.nil?
+    return if user.nil?
     # Define abilities for the user here. For example:
     #
     #   return unless user.present?
