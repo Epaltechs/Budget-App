@@ -1,20 +1,22 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.1.2'
 
-gem 'cancancan'
+# gem 'cancancan'
 
-gem 'jwt'
+# gem 'jwt'
 
-gem 'htmlbeautifier'
+# gem 'htmlbeautifier'
 
-gem 'letter_opener'
+# gem 'letter_opener'
 
 # gem 'bullet', group: 'development'
 
 # add device for authentication
-gem 'devise'
+# gem 'devise'
 
 # linters installitions
 gem 'rubocop', '>= 1.0', '< 2.0'
@@ -41,7 +43,7 @@ gem 'turbo-rails'
 gem 'stimulus-rails'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
-gem 'jbuilder'
+# gem 'jbuilder'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
@@ -66,20 +68,20 @@ gem 'bootsnap', require: false
 
 # gem 'childprocess'
 
-gem 'ffi'
+# gem 'ffi'
 
-gem 'rails-controller-testing'
+# gem 'rails-controller-testing'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem 'capybara'
-  gem 'database_cleaner'
-  gem 'debug', platforms: %i[mri mingw x64_mingw]
-  gem 'rspec-rails'
-  gem 'selenium-webdriver'
-  gem 'webdrivers'
+  # gem 'capybara'
+  # gem 'database_cleaner'
+  # gem 'debug', platforms: %i[mri mingw x64_mingw]
+  # gem 'rspec-rails'
+  # gem 'selenium-webdriver'
+  # gem 'webdrivers'
 end
-gem 'rswag'
+# gem 'rswag'
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
