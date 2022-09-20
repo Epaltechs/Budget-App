@@ -1,9 +1,9 @@
 class Ability
   include CanCan::Ability
 
-  def initialize(user)
-    can :read, :all if user.nil?
-    return if user.nil?
+  # def initialize(user)
+  #   can :read, :all if user.nil?
+  #   return if user.nil?
     # Define abilities for the user here. For example:
     #
     #   return unless user.present?
@@ -28,5 +28,5 @@ class Ability
     #
     # See the wiki for details:
     # https://github.com/CanCanCommunity/cancancan/blob/develop/docs/define_check_abilities.md
-  end
+  # end
 end
