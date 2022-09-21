@@ -1,6 +1,6 @@
 <nav class="nav align-items-center justify-content-center">
   <% if user_signed_in? %>
-    Welcome <%= current_user.name.capitalize %>!     
+    Welcome <%= current_user.name.capitalize %>!
     <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-outline-danger btn-sm" %>
   <% else %>
     <%= link_to 'Register', new_user_registration_path, class: "nav-link" %>
