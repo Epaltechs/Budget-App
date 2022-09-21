@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Assuming you have not yet modified this file, each configuration option below
 # is set to its default value. Note that some are commented out while others
 # are not: uncommented lines are intended to protect your configuration from
@@ -14,7 +12,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '02d19def7e6f01f4c31a8492a2975e7a4e5c2c605975b85f56e2a4e1a928817d3fd2051b8c45979cbd68cb1de21a949e4a64fea42faa7057acdeb585b897cf60'
+  # config.secret_key = '5263ab3ec99115d222d8508c258c37a03acf919a458f767fd16ebc5974921b914e76f54c2869a76be393c7015617c0a355cc47a3a26d61f002169190015a72d5'
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -126,7 +124,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 12
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = 'f271b758d6fc98c6dddd081eb69c26719916d589d044107d8336057bc3e45dc7c16c057c381346f30dd55726b01594fb7f57d5d302b25ce59af6c086d9e4e5d5'
+  # config.pepper = 'eef06e2174f064ea29985e35a1f4bc7088a297ee38552c18d66e5f6d43332187eda6f55b0bfdc5073c301eda5eff3a87c47d88c72f5a4d6c4e2d89ba2e3fdb23'
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -298,7 +296,8 @@ Devise.setup do |config|
 
   # ==> Turbolinks configuration
   # If your app is using Turbolinks, Turbolinks::Controller needs to be included to make redirection work correctly:
-  #
+  config.navigational_formats = ['*/*', :html, :turbo_stream]
+  
   # ActiveSupport.on_load(:devise_failure_app) do
   #   include Turbolinks::Controller
   # end
