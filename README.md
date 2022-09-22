@@ -1,9 +1,9 @@
 # Budget App
 
-> This Budget App is a mobile web application designed to help you spend money responsibly. It has a list of expenses connected with a category, and you can see and account for how much money you spent on what, and which category. It also displays the category and transactions one spend the most money in and the total monthly expenses, allowing you to be reasonable in making financial decisions.
+> This Budget App is a mobile web application designed to help you spend money responsibly. It has a list of expenses connected with a category, and you can see and account for how much money you spend and on what, as well as which category. It also displays the category and transactions one spend the most money in and the total monthly expenses, allowing you to be reasonable in making financial decisions.
 
 ## Schema
-[](./app/assets/images/budget sample.png)
+![](./app/assets/images/budget-sample.png)
 
 ## Built With
 
