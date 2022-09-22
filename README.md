@@ -3,7 +3,7 @@
 > This Budget App is a mobile web application designed to help you spend money responsibly. It has a list of expenses connected with a category, and you can see and account for how much money you spent on what, and which category. It also displays the category and transactions one spend the most money in and the total monthly expenses, allowing you to be reasonable in making financial decisions.
 
 ## Schema
-![](./app/assets/images/budget sample.png)
+[](./app/assets/images/budget sample.png)
 
 ## Built With
 
@@ -16,10 +16,10 @@
 - cancancan
 
 ## Live Demo
-![Video](https://www.loom.com/share/d38c0be3307b48f79d38af51043bb559)
+[Video](https://www.loom.com/share/d38c0be3307b48f79d38af51043bb559)
 
 ## Deployment
-![Heroku](https://epal-budget-app.herokuapp.com/)
+[Heroku](https://epal-budget-app.herokuapp.com/)
 
 ## Get Started
 To get a local copy up and running follow these simple steps.
