@@ -7,6 +7,7 @@ class ExpensesController < ApplicationController
   def create
     @expense = Expense.create(expense_params)
     @expense.user_id = current_user.id
+    @expense.category_id = Category.find(@expense.category_id).id
     respond_to do |format|
       if @expense.save
         format.html do
