@@ -20,6 +20,7 @@
 
 ## Deployment
 [Heroku](https://epal-budget-app.herokuapp.com/)
+[Short URL](https://tinyurl.com/epalbud)
 
 ## Get Started
 To get a local copy up and running follow these simple steps.
