@@ -96,3 +96,8 @@
   border-radius: 8px;
   margin-top: 15px;
 }
+
+label.required::after {
+  content: "*required*";
+  color: rgb(255, 145, 0);
+}
