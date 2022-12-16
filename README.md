@@ -19,7 +19,9 @@
 [Video](https://www.loom.com/share/d38c0be3307b48f79d38af51043bb559)
 
 ## Deployment
-[Heroku](https://epal-budget-app.herokuapp.com/)
+[Render](https://epal-budget-app.onrender.com/)
+
+[Short URL](https://tinyurl.com/epalbud)
 
 ## Get Started
 To get a local copy up and running follow these simple steps.

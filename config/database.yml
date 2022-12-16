@@ -24,17 +24,16 @@ default: &default
 development:
   <<: *default
   database: budget_app_development
-  username: postgres
-  password: Epal4postgres.
-
+  # host: 127.0.0.1
+  # username: postgres
+  # password: Epal4postgres.
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: budget_app
+  #username: Project
 
   # The password associated with the postgres role (username).
-  #password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -60,8 +59,8 @@ development:
 test:
   <<: *default
   database: budget_app_test
-  username: postgres
-  password: Epal4postgres.
+  # username: postgres
+  # password: Epal4postgres.
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -85,6 +84,6 @@ test:
 #
 production:
   <<: *default
-  database: budget_app_production
-  username: budget_app
-  password: <%= ENV["BUDGET_APP_DATABASE_PASSWORD"] %>
+  # database: budget_app_production
+  # username: postgres
+  url: <%= ENV['DATABASE_URL'] %>
