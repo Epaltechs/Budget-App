@@ -5,22 +5,15 @@ ruby '3.1.2'
 
 gem 'cancancan'
 
-gem 'jwt'
-
-gem 'htmlbeautifier'
-
-gem 'letter_opener'
-
-# gem 'bullet', group: 'development'
-
-# add device for authentication
 gem 'devise'
+
+gem 'ffi', '~> 1.15', '>= 1.15.5'
 
 # linters installitions
 gem 'rubocop', '>= 1.0', '< 2.0'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem 'rails', '~> 7.0.3'
+gem 'rails', '~> 7.0.2', '>= 7.0.2.4'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
@@ -43,6 +36,8 @@ gem 'stimulus-rails'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
 
+gem 'tzinfo-data'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -53,7 +48,7 @@ gem 'jbuilder'
 # gem "bcrypt", "~> 3.1.7"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+# gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]  ######################
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
@@ -64,20 +59,11 @@ gem 'bootsnap', require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
-# gem 'childprocess'
-
-gem 'ffi'
-
-gem 'rails-controller-testing'
-
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem 'capybara'
-  gem 'database_cleaner'
   gem 'debug', platforms: %i[mri mingw x64_mingw]
-  gem 'rspec-rails'
-  gem 'selenium-webdriver'
-  gem 'webdrivers'
+  gem 'rails-controller-testing'
+  gem 'rspec-rails', '~> 6.0.0.rc1'
 end
 
 group :development do
@@ -93,4 +79,7 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+  gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'webdrivers'
 end
